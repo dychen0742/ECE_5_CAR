@@ -30,7 +30,7 @@
     
     <section class="main">
       <h2> Objective</h2>
-      <p1>The objective of this lab is to ...</p1> 
+      <p1>The objective of this lab is to have hands on experience in augmenting existing software as well as modifications for hardware to build a line following robot. There are many ways to improve and experiment and a lot of room for creativity. It will be a great chance to put our team working skils, perseverence, and problem solving skills to the test while combining knowlege we have acculated from all the previous labs and lessons in ECE 5.</p1> 
       
       <br><br>
       
@@ -78,11 +78,11 @@
             What range of values did your potentiometer output? 
             Did Turning your potentiometer clockwise increase or decrease the value?
             <br><br>
-            &emsp; The potentiometer gave an output between 0 and 100. When it was rotated clockwise, the value would decrease. when it was rotated counterclockwise, the value would increase.
+            &emsp; The potentiometers gave an output between 0 and 100. When it was rotated clockwise, the value would decrease. when it was rotated counterclockwise, the value would increase.
             <br><br><br> 
             What range of values did your photo resistors output for a white surface and for a black surface?
             <br><br> 
-            &emsp; The maxi 
+            &emsp; The range of values for both black and white originally varied by a lot before we implemented fixed ambient lighting and a 3D printed light shield. After that, we mostly got the same range of photo resistor values with white ranging from 80-90 and black ranging from 130-140 under different values of outside light because of the lightshield and ambient lighting.
           </p> <!-- p is paragraph -->
         </div> <!-- This is the end of div box1 -->
       </div> <!-- This is the end of div interactive -->
@@ -175,7 +175,7 @@
         <div class='box1'>
           <br>
           
-            <img src = 'https://www.pm10inc.com/wp-content/themes/micron/images/placeholders/ninzio_slider_placeholder.png' class='imgmar'>
+            <img src = 'https://lh3.googleusercontent.com/Uetfju7OsXWxMMwo1fFObLDFu29UyqvFLkoTbiTx9KmF1LV0IyLS9GS4hIbUyZTxEVXQfaZvP667Ql7X6Cv-nUY2GK3zDWZktCk-SygGqXrGJ7FlgDj7AjqwlCFxwd070XW889_7=w4000' class='imgmar'>
             <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
             <br>
             <p2>IMG1 Add a picture of your robot following a line 
@@ -185,13 +185,14 @@
           <p class='box2'>
             What was the best PID values that you used? How well did this track? Any limitations?
             <br><br>
-            &emsp; Answer here...
+            &emsp;  For the seeding track which did not have too sharp turns but still a decent turn to overcome, our raw PID values from our potentiometer (meaning the constant that was divided) we used for our best seeding record was as follows: P = 16, I = 94, D = 100 and our speed was 55. We saw a general trend that the higher we increased our speed, the more we had to increase the P. Increasing the P in our robot made it oscillate a lot at higher speeds and we increased I and D respectively which we believe had somewhat of an effect. Nevertheless, changes in P most greatly affected our turns and performance. We were not able to get the robot to drive stabily at speeds higher than 55 but we believe with more tweaking in the upcoming week before the competition can see improvements. We will also have to adjust the PID values and speed depending on the tracks during the tournement. The limitations of having one PID is that it will not work for every track. For example, the PID may need to be adjusted if there is a super sharp turn or bendy track that requires slower speeds, or straight line track that can allow for faster speeds.
+
             <br><br><br>
             What does PID stand for?  What is the purpose of the P, the I, and the D?  
             What steps did you take to choose the best values for your robot? 
             Explain this like you would for someone taking this course next year.
             <br><br>
-            &emsp; PID stands for Proportional integral derivative. The purpose of P is to be a scalar multiple that would help to transfer our error into the desired turn rate. The purpose of I which is the integral is to sum the previous errors like memory and will help elimnate small and steady state errors. Increasing kI on the potentiometer is proportional to the sumerror and will help decrease the error that the proportional control was not able to get rid of. The purpose of D which is the derivative is to predict increases and decreases in error in preparation for turns, essentially determining how it will perform at sharp turns. If the rate of change is very high like at sharp corners, it will correct the turn accordingly. 
+            &emsp; PID stands for Proportional integral derivative. The purpose of P is to be a scalar multiple that would help to transfer our error into the desired turn rate. The purpose of I which is the integral is to sum the previous errors like memory and will help elimnate small and steady state errors. Increasing kI on the potentiometer is proportional to the sumerror and will help decrease the error that the proportional control was not able to get rid of. The purpose of D which is the derivative is to predict increases and decreases in error in preparation for turns, essentially determining how it will perform at sharp turns. If the rate of change is very high like at sharp corners, it will correct the turn accordingly. The potentiometers's varied values determine the constant for its respective speed, proportional, integral, and derivative value, but the constant is processed in a way that the proportional constant will have teh greatest effect because it is divided by a factor of 1 while the integral and derivative cosntants will be divided by greater values like 100 and 1000 so the effect I and D have on the turns is much less than P. 
           </p> <!-- p is paragraph -->
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
@@ -208,7 +209,7 @@
           <p class='box2'>
             Insert a video of your robot in action!
           </p> <!-- p is paragraph -->
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+          <iframe width="420" height="315" src="https://youtu.be/XZCwMoVOJ_U"> </iframe>
             <br>
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
